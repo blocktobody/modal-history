@@ -1,0 +1,74 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    },
+    "createDefaultProgram": true,
+    "project": ["./tsconfig.json"]
+  },
+  "extends": [
+    "tui/es6",
+    "react-app",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "plugins": ["react", "react-hooks"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "complexity": "off",
+    "no-process-env": "off",
+    "consistent-return": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-warning-comments": "off",
+    "no-console": "off",
+    "no-undefined": "off",
+    "no-shadow": "off",
+    "no-new": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "react/jsx-filename-extension": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn"
+    ],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "import/no-extraneous-dependencies": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // eslint-plugin-react가 자동 리액트버전탐지
+    }
+  }
+}
