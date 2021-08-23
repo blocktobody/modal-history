@@ -10,7 +10,6 @@
     "project": ["./tsconfig.json"]
   },
   "extends": [
-    "tui/es6",
     "react-app",
     "plugin:prettier/recommended",
     "prettier/react",
